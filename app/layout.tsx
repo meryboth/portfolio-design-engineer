@@ -17,7 +17,8 @@ export const metadata: Metadata = {
   description: 'This is my portfolio.',
   openGraph: {
     title: 'Portfolio - Marilyn Botheatoz',
-    description: 'This is my portfolio working as a design engineer.',
+    description:
+      'I am a design engineer with passion for building innovative projects that add value to the world.',
     url: baseUrl,
     siteName: 'portfolio',
     locale: 'en_US',
@@ -52,6 +53,9 @@ export default function RootLayout({
         GeistMono.variable
       )}
     >
+      <head>
+        <link rel='icon' href='/favicon.ico' />
+      </head>
       <body className='antialiased max-w-xl mx-4 mt-8 lg:mx-auto'>
         <main className='flex-auto min-w-0 mt-6 flex flex-col px-2 md:px-0'>
           <Navbar />
