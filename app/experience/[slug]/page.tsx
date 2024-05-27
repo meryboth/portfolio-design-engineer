@@ -1,6 +1,6 @@
 import { notFound } from 'next/navigation';
 import { CustomMDX } from 'app/components/mdx';
-import { formatDate, getBlogPosts } from 'app/experience/utils';
+import { formatYear, getBlogPosts } from 'app/experience/utils';
 import { baseUrl } from 'app/sitemap';
 
 export async function generateStaticParams() {
@@ -19,7 +19,8 @@ export function generateMetadata({ params }) {
 
   let {
     title,
-    publishedAt: publishedTime,
+    startedAt,
+    finishedAt,
     summary: description,
     image,
   } = post.metadata;
@@ -34,7 +35,7 @@ export function generateMetadata({ params }) {
       title,
       description,
       type: 'article',
-      publishedTime,
+      publishedTime: startedAt,
       url: `${baseUrl}/experience/${post.slug}`,
       images: [
         {
@@ -68,8 +69,8 @@ export default function Experience({ params }) {
             '@context': 'https://schema.org',
             '@type': 'BlogPosting',
             headline: post.metadata.title,
-            datePublished: post.metadata.publishedAt,
-            dateModified: post.metadata.publishedAt,
+            datePublished: post.metadata.startedAt,
+            dateModified: post.metadata.finishedAt,
             description: post.metadata.summary,
             image: post.metadata.image
               ? `${baseUrl}${post.metadata.image}`
@@ -87,7 +88,8 @@ export default function Experience({ params }) {
       </h1>
       <div className='flex justify-between items-center mt-2 mb-8 text-sm'>
         <p className='text-sm text-neutral-600 dark:text-neutral-400'>
-          {formatDate(post.metadata.publishedAt)}
+          {formatYear(post.metadata.startedAt)} -{' '}
+          {formatYear(post.metadata.finishedAt)}
         </p>
       </div>
       <article className='prose'>
