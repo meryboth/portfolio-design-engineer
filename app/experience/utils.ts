@@ -54,8 +54,7 @@ export function getBlogPosts() {
   return getMDXData(path.join(process.cwd(), 'app', 'experience', 'posts'));
 }
 
-export function formatYear(dateString) {
-  const date = new Date(dateString);
-  return date.getFullYear();
+export function formatYear(date) {
+  const year = new Date(date).getFullYear();
+  return year === 2024 ? 'Present' : year;
 }
-

@@ -5,7 +5,7 @@ export const metadata = {
 
 const academy = [
   {
-    title: 'Bachelor of Architecture (6-year program)',
+    title: 'Bachelor of Architecture',
     institution: 'Universidad de Buenos Aires',
     type: "Bachelor's Degree",
     url: 'https://www.fadu.uba.ar/',
@@ -13,7 +13,7 @@ const academy = [
     graduationYear: 2019,
   },
   {
-    title: 'Professional Certification in Software Development - Frontend',
+    title: 'Software Development - Frontend',
     institution: 'Coderhouse',
     type: 'Professional Certification',
     url: 'https://www.coderhouse.com/ar/',
@@ -29,8 +29,7 @@ const academy = [
     graduationYear: 2025,
   },
   {
-    title:
-      'Postgraduate Course in Strategic User Experience Design (Advanced UX)',
+    title: 'Strategic User Experience Design (Advanced UX)',
     institution: 'Universidad de Buenos Aires',
     type: 'Postgraduate Course',
     url: 'http://www.somosuxlabs.com.ar',
