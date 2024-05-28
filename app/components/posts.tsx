@@ -21,6 +21,9 @@ export function ExperiencePosts() {
               ? 'present'
               : formatYear(post.metadata.finishedAt);
 
+          // Separar el título por el carácter '|'
+          const [titleMain, titleSub] = post.metadata.title.split('|');
+
           return (
             <Link
               key={post.slug}
@@ -32,7 +35,12 @@ export function ExperiencePosts() {
                   {startYear} - {endYear}
                 </p>
                 <p className='text-neutral-900 dark:text-neutral-100 tracking-tight'>
-                  {post.metadata.title}
+                  {titleMain}
+                  {titleSub && (
+                    <span className='text-neutral-400 font-light ml-2'>
+                      {titleSub}
+                    </span>
+                  )}
                 </p>
               </div>
             </Link>
