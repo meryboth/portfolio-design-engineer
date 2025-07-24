@@ -9,7 +9,7 @@ export default function Page() {
         </h1>
         <div className='flex'>
           <h6 className='font-light'>Design Engineer</h6>
-          <p className='font-light ml-3 text-gray-400'>S/Sr</p>
+          <p className='font-light ml-3 text-gray-400'>Senior</p>
         </div>
       </div>
       <p className='mb-4'>

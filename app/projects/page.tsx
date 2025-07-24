@@ -5,6 +5,16 @@ export const metadata = {
 
 const projects = [
   {
+    title: 'InterAcciona',
+    description:
+      "Developed an in-house AI-powered feedback collection system for Acciona's People Experience team to enhance collaborator engagement.",
+    imageUrl: '/images/interacciona.png',
+    iWorkedAs: ['ux-ui designer'],
+    stack: ['react js', 'node js', 'openAI'],
+    url: '',
+    copyright: 'Acciona IT',
+  },
+  {
     title: 'Criptopoint',
     description:
       'A secure and user-friendly cryptocurrency wallet designed for seamless management and transactions of digital assets.',
@@ -45,7 +55,7 @@ const projects = [
     copyright: 'Flock IT',
   },
   {
-    title: 'TodoWell',
+    title: 'Wellness App',
     description:
       'An AI-powered health platform designed to promote well-being and healthy habits through personalized recommendations.',
     imageUrl: '/images/todowell.jpg',
