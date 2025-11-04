@@ -5,6 +5,26 @@ export const metadata = {
 
 const projects = [
   {
+    title: 'Multi Agent Product Builder',
+    description:
+      'An advanced multi-agent system that leverages AI agents to collaboratively design, plan, and build software products. Each agent specializes in different aspects of product development, working together to deliver comprehensive solutions.',
+    imageUrl: '/images/agents.png',
+    iWorkedAs: ['ai engineer', 'backend developer'],
+    stack: ['crewAI', 'openAI', 'supabase', 'python', 'langchain'],
+    url: '',
+    copyright: 'Marilyn Botheatoz',
+  },
+  {
+    title: 'Real Time Conversational Avatar',
+    description:
+      'An immersive AI-powered conversational avatar with real-time voice interaction and 3D rendering. Features natural language processing and lifelike animations for engaging human-AI interactions.',
+    imageUrl: '/images/avatar.png',
+    iWorkedAs: ['ai engineer', 'frontend developer'],
+    stack: ['three.js', 'elevenlabs', 'openAI', 'react', 'webGL'],
+    url: '',
+    copyright: 'Flock IT',
+  },
+  {
     title: 'InterAcciona',
     description:
       "Developed an in-house AI-powered feedback collection system for Acciona's People Experience team to enhance collaborator engagement.",

@@ -8,14 +8,14 @@ import { baseUrl } from './sitemap';
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
   title: {
-    default: 'Portfolio - Marilyn Botheatoz',
+    default: 'Portfolio - Marilyn Botheatoz | AI Engineer',
     template: '',
   },
-  description: 'This is my portfolio.',
+  description: 'AI Engineer and R&D Lead specializing in machine learning, LLMs, computer vision, and deep learning solutions.',
   openGraph: {
-    title: 'Portfolio - Marilyn Botheatoz',
+    title: 'Portfolio - Marilyn Botheatoz | AI Engineer',
     description:
-      'I am a design engineer with passion for building innovative projects that add value to the world.',
+      'AI Engineer and R&D Lead with expertise in machine learning, Large Language Models, computer vision, and deep learning. Passionate about building innovative AI solutions that create real-world impact.',
     url: baseUrl,
     siteName: 'portfolio',
     locale: 'en_US',
@@ -52,7 +52,7 @@ export default function RootLayout({
       )}
     >
       <head>
-        <link rel='icon' href='/favicon.ico' />
+        <link rel='icon' href='/coffee-favicon.svg' type='image/svg+xml' />
       </head>
       <body className='antialiased max-w-xl mx-4 mt-8 lg:mx-auto'>
         <main className='flex-auto min-w-0 mt-6 flex flex-col px-2 md:px-0'>

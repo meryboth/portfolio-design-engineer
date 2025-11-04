@@ -15,10 +15,11 @@ export function ExperiencePosts() {
         })
         .map((post) => {
           const startYear = formatYear(post.metadata.startedAt);
-          const endYear =
-            new Date(post.metadata.finishedAt).getFullYear() ===
-            new Date().getFullYear()
-              ? 'present'
+          const endYear = !post.metadata.finishedAt || post.metadata.finishedAt === ''
+            ? 'Current'
+            : new Date(post.metadata.finishedAt).getFullYear() ===
+              new Date().getFullYear()
+              ? 'Present'
               : formatYear(post.metadata.finishedAt);
 
           // Separar el título por el carácter '|'
